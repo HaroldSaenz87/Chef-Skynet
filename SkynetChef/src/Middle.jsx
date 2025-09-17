@@ -8,16 +8,15 @@ function Middle(){
         <li key={ingredients}>{ingredients}</li>
     ))
 
-    function handleSubmit(event){
-        event.preventDefault()
-        const formData = new FormData(event.currentTarget)
+    function addIngredient(formData){
         const newIngredient = formData.get("ingredient")
         setIngredients(prevIngredients => [...prevIngredients, newIngredient])
+        
     }
 
     return(
         <main>
-            <form onSubmit={handleSubmit} className="ingred-form">
+            <form action={addIngredient} className="ingred-form">
                 <input type="text"
                 placeholder="e.g. oregano" aria-label="Add ingredient" name="ingredient" />
                 <button>+ Add Ingredient</button>
