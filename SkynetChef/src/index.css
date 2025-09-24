@@ -39,6 +39,15 @@ main{
 
 }
 
+section
+{
+  max-width: 600px;   
+  margin: 20px auto;  
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+
 .ingred-form > input{
   border-radius: 6px;
   border: 1px, solid rgb(107, 107, 107);
@@ -55,8 +64,37 @@ main{
   font-family: Roboto, sans-serif;
   border-radius: 6px;
   border: none;
-  background-color: black;
+  background: black;
   color: white;
   width: 150px;
   font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.ingred-form > button:hover
+{
+  background: rgb(66, 66, 66);
+}
+
+.btn
+{
+  background: #D17557;
+  font-family: Roboto, sans-serif;
+  padding: 9px 17px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  border-radius: 6px;
+  color: #FAFAF8;
+}
+
+.btn:hover
+{
+  background: #e8997f;
+}
+
+.get-recipe-container
+{
+  background: #F0EFEB;
+  padding: 10px 28px;
+  border-radius: 8px;
 }
