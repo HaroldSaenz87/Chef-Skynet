@@ -22,7 +22,7 @@ function Middle(){
                 <button>+ Add Ingredient</button>
             </form>
 
-            <section>
+            {ingredients.length > 0 ? <section>
 
                 <h2>Ingredients on hand:</h2>
 
@@ -30,7 +30,7 @@ function Middle(){
                     {ingredientsList}
                 </ul>
 
-                <div className="get-recipe-container">
+                {ingredients.length > 3 ?<div className="get-recipe-container">
 
                     <div>
                         <h3>Ready for a recipe?</h3>
@@ -39,9 +39,9 @@ function Middle(){
 
                     <button>Get a recipe</button>
                     
-                </div>
+                </div>: null}
 
-            </section>
+            </section>: null}
 
         </main>
     )
