@@ -4,7 +4,7 @@ function Header(){
     return(
         <header>
             <img src={Skynet} />
-            <h1>Chef Skynet</h1>
+            <h1>Chef AI</h1>
         </header>
     )
 }
