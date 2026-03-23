@@ -1,10 +1,9 @@
-:root{
-
-  --accent: #D17557;
-  --accent-hover: #e8997f;
-  --accent2: #F0EFEB;
+:root {
+  /* Updated to a fresh, modern culinary palette */
+  --accent: #6b8e23;       /* Olive green for primary actions */
+  --accent-hover: #80a040; /* Lighter olive for hover */
+  --accent2: #f4f7ed;      /* Very light sage for the recipe container */
   --fontFam: Orbitron;
-
 }
 
 *{
@@ -22,9 +21,8 @@ header{
   align-items: center;
   gap: 11px;
   background-color: white;
-  box-shadow: 0px 1px 5px 0px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1); /* Softened shadow */
   height: 80px;
-
 }
 
 /* shrink the image down */
@@ -35,13 +33,14 @@ header > img {
 /* set the font weight of header titles to normal */
 header > h1 {
   font-weight: 400;
+  color: #333; /* Darker text for better contrast */
 }
 
 main{
   padding: 30px 80px 10px;
-  background-color: #a3a3a3;
+  /* Changed from #a3a3a3 to a clean, light stone gray */
+  background-color: #efeee9; 
   
-
   min-height: calc(100vh - 80px);
   
   display: flex;
@@ -52,7 +51,6 @@ main{
   display: flex;
   justify-content: center;
   gap: 12px;
-
 }
 
 section
@@ -61,37 +59,37 @@ section
   margin: 20px auto;  
   padding: 20px;
   border-radius: 10px;
-
-  
-  
+  background-color: white; /* Added white background to the ingredients list card */
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
 }
 
 .ingred-form > input{
   border-radius: 6px;
-  border: 1px, solid rgb(107, 107, 107);
+  border: 1px solid #ccc; /* Cleaned up border syntax */
   padding: 9px 13px;
-  box-shadow: 0px 1px 2px 0px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05);
   flex-grow: 1;
   min-width: 150px;
   max-width: 400px;
-
 }
-
 
 .ingred-form > button{
   font-family: var(--fontFam), sans-serif;
   border-radius: 6px;
   border: none;
-  background: black;
+  /* Changed from black to your new accent green */
+  background: var(--accent);
   color: white;
   width: 150px;
   font-size: 0.875rem;
   cursor: pointer;
+  transition: background 0.2s ease;
 }
 
 .ingred-form > button:hover
 {
-  background: rgb(66, 66, 66);
+  /* Changed from rgb(66, 66, 66) to the accent hover */
+  background: var(--accent-hover);
 }
 
 .btn
@@ -103,6 +101,8 @@ section
   cursor: pointer;
   border-radius: 6px;
   color: #FAFAF8;
+  border: none; /* Ensure no default border */
+  transition: background 0.2s ease;
 }
 
 .btn:hover
@@ -115,4 +115,5 @@ section
   background: var(--accent2);
   padding: 10px 28px;
   border-radius: 8px;
+  border: 1px solid #e0e7d5; /* Light border to define the box */
 }
